@@ -2059,10 +2059,14 @@ enum IRQ_NUMBER_t {
 #define USB_CTL_ODDRST			((uint8_t)0x02)			//
 #define USB_CTL_USBENSOFEN		((uint8_t)0x01)			//
 #define USB0_ADDR		(*(volatile uint8_t  *)0x40072098) // Address Register
+#define USB_ADDR_LSEN			((uint8_t)0x80)			// host only, enable low speed
 #define USB0_BDTPAGE1		(*(volatile uint8_t  *)0x4007209C) // BDT Page Register 1
 #define USB0_FRMNUML		(*(volatile uint8_t  *)0x400720A0) // Frame Number Register Low
 #define USB0_FRMNUMH		(*(volatile uint8_t  *)0x400720A4) // Frame Number Register High
 #define USB0_TOKEN		(*(volatile uint8_t  *)0x400720A8) // Token Register
+#define USB_PID_OUT		((uint8_t)0x10)
+#define USB_PID_IN		((uint8_t)0x90)
+#define USB_PID_SETUP		((uint8_t)0xD0)
 #define USB0_SOFTHLD		(*(volatile uint8_t  *)0x400720AC) // SOF Threshold Register
 #define USB0_BDTPAGE2		(*(volatile uint8_t  *)0x400720B0) // BDT Page Register 2
 #define USB0_BDTPAGE3		(*(volatile uint8_t  *)0x400720B4) // BDT Page Register 3

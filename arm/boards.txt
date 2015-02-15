@@ -43,6 +43,9 @@ teensy31.menu.usb.rawhid.fake_serial=teensy_gateway
 teensy31.menu.usb.flightsim=Flight Sim Controls
 teensy31.menu.usb.flightsim.build.define0=-DUSB_FLIGHTSIM
 teensy31.menu.usb.flightsim.fake_serial=teensy_gateway
+teensy31.menu.usb.adk.name=Android ADK
+teensy31.menu.usb.adk.build.define0=-DUSB_HOST
+teensy31.menu.usb.adk.build.define1=-DUSB_ADK
 #uncomment these if you want to try faster overclocking
 #teensy31.menu.speed.168=168 MHz (overclock)
 #teensy31.menu.speed.144=144 MHz (overclock)

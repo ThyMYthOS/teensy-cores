@@ -28,7 +28,7 @@
  * SOFTWARE.
  */
 
-#if F_CPU >= 20000000
+#if F_CPU >= 20000000 && !defined(USB_HOST)
 
 #define USB_DESC_LIST_DEFINE
 #include "usb_desc.h"

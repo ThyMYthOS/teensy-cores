@@ -31,6 +31,8 @@
 #include <avr/pgmspace.h>
 #include <stdint.h>
 
+#ifdef KEYBOARD_INTERFACE // defined by usb_dev.h -> usb_desc.h
+
 #include "keylayouts.h"
 
 #ifdef M
@@ -94,3 +96,4 @@ const KEYCODE_TYPE keycodes_iso_8859_1[] = {
 };
 #endif // ISO_8859_1_A0
 
+#endif // KEYBOARD_INTERFACE

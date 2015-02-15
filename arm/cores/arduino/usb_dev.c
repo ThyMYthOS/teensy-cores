@@ -38,7 +38,7 @@
  */
 
 #include "usb_dev.h"
-#if F_CPU >= 20000000 && defined(NUM_ENDPOINTS)
+#if F_CPU >= 20000000 && defined(NUM_ENDPOINTS) && !defined(USB_HOST)
 
 #include "kinetis.h"
 //#include "HardwareSerial.h"

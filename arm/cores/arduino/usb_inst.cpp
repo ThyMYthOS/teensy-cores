@@ -68,6 +68,11 @@ usb_joystick_class Joystick;
 uint8_t usb_joystick_class::manual_mode = 0;
 #endif
 
+#ifdef USB_ADK
+// TODO Use ADK as Serial?;
+usb_serdummy_class Serial;
+#endif
+
 #ifdef USB_DISABLED
 usb_serial_class Serial;
 #endif
